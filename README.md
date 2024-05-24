@@ -7,8 +7,14 @@ Parses payload for Samsung Smart Tag locator.
 1) Go to Help -> About Wireshark -> Folders
 2) Find the value for Personal Lua Plugins (For me it was "~/.local/lib/wireshark/plugins")
 3) Copy ble-smsmtag.lua to Lua Plugins folder
-4) Press Ctrl+Shift+L or Analyze -> Reload Lua Plugins
+4) Restart Wireshark or Press Ctrl+Shift+L or Analyze -> Reload Lua Plugins
 5) Enjoy
+
+On Ubuntu or other Linux distros you might want to try this one-liner:
+```bash
+curl https://raw.githubusercontent.com/culhatsker/samsung-smart-tag-wireshark/main/ble-smsmtag.lua > ~/.local/lib/wireshark/plugins/ble-smsmtag.lua
+```
+Then do 4)
 
 ## Limitations
 
